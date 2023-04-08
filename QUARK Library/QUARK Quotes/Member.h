@@ -17,6 +17,8 @@ protected:
     std::vector<Copy> borrowedCopies;
 
 public:
+    static Member nullMember;
+    Member() {}
     Member(std::string name, std::string lastname, int id) : name(name), lastname(lastname), memberID(id) {}
 
     virtual std::string getFullName() const;

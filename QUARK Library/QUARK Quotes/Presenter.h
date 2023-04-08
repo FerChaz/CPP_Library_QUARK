@@ -12,14 +12,7 @@ private:
 	IView* view;
 	Library* library;
 public: 
-	struct newQuotationData {
-		bool garmentFeature1;
-		bool garmentFeature2;
-		bool garmentIsPremium;
-		std::string garmentString;
-		float unitPrice;
-		int quantity;
-	};
+	static std::string errorMsg;
 
 	Presenter(IView* view);
 	~Presenter();

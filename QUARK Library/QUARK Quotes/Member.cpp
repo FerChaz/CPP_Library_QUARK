@@ -2,6 +2,8 @@
 
 using namespace std;
 
+Member Member::nullMember = Member();
+
 std::string Member::getFullName() const
 {
 	return name + " " + lastname;
